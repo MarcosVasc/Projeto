@@ -60,4 +60,15 @@ def calculadora(): #FUNÇÃO PARA ABRIR A SEGUNDA JANELA
     peso_entrada.grid(column=0, row=1, padx=200, pady=15, sticky=E) #POSIÇÃO DA ENTRADA DO PESO
 
     label_altura.grid(column=0, row=2, padx=200, pady=15, sticky=W) #POSIÇÃO DO TEXTO DA ALTURA
-    altura_entrada.grid(column=0, row=2, padx=200, pady=15, sticky=E) #POSIÇÃO DA ENTRADA DA ALTURA
+    altura_entrada.grid(column=0, row=2, padx=200, pady=15, sticky=E) #POSIÇÃO DA ENTRADA DA ALTURA 
+
+    label_idade.grid(column=0, row=3, padx=200, pady=15, sticky=W) #POSIÇÃO DO TEXTO DA IDADE
+    idade_entrada.grid(column=0, row=3, padx=200, pady=15, sticky=E) #POSIÇÃO DA ENTRADA DA IDADE
+
+    label_genero.grid(row=4, column=0, padx=0, pady=15) #POSIÇÃO DO TEXTO DO GENERO
+    botao_var1.grid(row=5, column=0, padx=0, pady=0) #POSIÇÃO DO PRIMEIRO BOTAO DO GENERO
+    botao_var2.grid(row=6, column=0, padx=0, pady=4) #POSIÇÃO DO SEGUNDO BOTAO DO GENERO
+
+    botao.grid(column=0, row=7, padx=200, pady=30) #POSIÇÃO DO BOTAO PRINCIPAL
+
+    resultado.grid(column=0, row=8, padx=200, pady=40) #POSIÇÃO DO RESULTADO
