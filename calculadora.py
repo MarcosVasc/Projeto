@@ -51,3 +51,13 @@ def calculadora(): #FUNÇÃO PARA ABRIR A SEGUNDA JANELA
 
     # TEXTO MOSTRANDO O RESULTADO DO CALCULO
     resultado = Label(janela_calculadora, text="", fg="red")
+
+      #LAYOUT DO PROGRAMA ( POSIÇÃO DE CADA ELEMENTO NA INTERFACE GRÁFICA )
+
+    label_titulo.grid(column=0, row=0, padx=200, pady=40) #POSIÇÃO DO TEXTO PRINCIPAL
+
+    label_peso.grid(column=0, row=1, padx=200, pady=15, sticky=W) #POSIÇÃO DO TEXTO DO PESO
+    peso_entrada.grid(column=0, row=1, padx=200, pady=15, sticky=E) #POSIÇÃO DA ENTRADA DO PESO
+
+    label_altura.grid(column=0, row=2, padx=200, pady=15, sticky=W) #POSIÇÃO DO TEXTO DA ALTURA
+    altura_entrada.grid(column=0, row=2, padx=200, pady=15, sticky=E) #POSIÇÃO DA ENTRADA DA ALTURA
