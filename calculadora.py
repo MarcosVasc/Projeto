@@ -72,3 +72,14 @@ def calculadora(): #FUNÇÃO PARA ABRIR A SEGUNDA JANELA
     botao.grid(column=0, row=7, padx=200, pady=30) #POSIÇÃO DO BOTAO PRINCIPAL
 
     resultado.grid(column=0, row=8, padx=200, pady=40) #POSIÇÃO DO RESULTADO
+    
+
+janela = Tk() #CRIA A JANELA INICIAL DA INTERFACE
+
+janela.title("TMB") #TITULO DA JANELA
+janela.geometry("900x600") #TAMANHO DA JANELA
+
+#BOTAO PARA ABRIR A OUTRA JANELA ( EXECUTANDO A FUNÇÃO CALCULADORA ), JUNTO DA SUA POSIÇÃO
+titulo = Button(janela, text="CALCULADORA DE TAXA METABÓLICA BASAL", command=calculadora, font="Times 20 bold", fg="black", bg="#ccccff").grid(column=0, row=0, padx=125, pady=225) 
+
+janela.mainloop() #CRIA O LOOP DA JANELA ( PODENDO CALCULAR QUANTAS VEZES QUISER )
