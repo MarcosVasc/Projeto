@@ -19,6 +19,23 @@ def calculadora(): #FUNÇÃO PARA ABRIR A SEGUNDA JANELA
 
 
     
-    janela_calculadora = Toplevel(janela) #CRIA A JANELA SECUNDÁRIA
-    janela_calculadora.title("Calculadora") #TITULO DA JANELA SECUNDÁRIA
-    janela_calculadora.geometry("640x600") #TAMANHO DA JANELA SECUNDÁRIA
+janela_calculadora = Toplevel(janela) #CRIA A JANELA SECUNDÁRIA
+janela_calculadora.title("Calculadora") #TITULO DA JANELA SECUNDÁRIA
+janela_calculadora.geometry("640x600") #TAMANHO DA JANELA SECUNDÁRIA
+
+genero_entrada_var = StringVar() #RECEBE O VALOR DA ENTRADA DO GENERO E COLOCA EM STRING
+
+#TEXTO PRINCIPAL
+label_titulo = Label(janela_calculadora, text="CALCULADORA DE TAXA METABÓLICA BASAL")
+
+# TEXTO E ENTRADA DO PESO
+label_peso = Label(janela_calculadora, text="Peso em kg:")
+peso_entrada = Entry(janela_calculadora)
+
+# TEXTO E ENTRADA DA ALTURA
+label_altura = Label(janela_calculadora, text="Altura em cm:")
+altura_entrada = Entry(janela_calculadora)
+
+# TEXTO E ENTRADA DA IDADE
+label_idade = Label(janela_calculadora, text="Idade:")
+idade_entrada = Entry(janela_calculadora)
